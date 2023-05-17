@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping List App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+    .navbar-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        flex: 1;
+        padding: 0;
+        }
+
+        .icon {
+            font-size: 22px;
+            margin-bottom: -6px;
+            color: rgb(179, 179, 179);
+            padding: 8px 8px 8px 8px;
+        }
+
+        .active {
+            color: white;
+        }
+
+        .navbar-text {
+        font-size: 12px;
+        color: white;
+        }
+
+</style>
+<body>
+  <header class="text-white py-2" style="background: black">
+    <div class="container">
+        <h2>VitaMeal</h2>
+    </div>
+  </header>
+
+  <main class="container py-4">
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Produkt</th>
+      <th scope="col">Verfügbarkeit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Apfel</td>
+      <td>10 Stück</td>
+    </tr>
+    <tr>
+      <td>Erdbeere</td>
+      <td>20 Stück</td>
+    </tr>
+  </tbody>
+</table>
+
+
+    <div id="add-item" class="input-group mt-4">
+      <input type="text" id="new-item" class="form-control" placeholder="Add an item">
+      <div class="input-group-append">
+        <button id="add-button" class="btn btn-dark">Add</button>
+      </div>
+    </div>
+  </main>
+
+<footer class="fixed-bottom" style="background: black">
+  <nav class="navbar justify-content-around">
+    <a href="#" class="navbar-brand">
+      <i class="fas fa-home icon active"></i>
+      <span class="navbar-text bold">Startseite</span>
+    </a>
+    <a href="#" class="navbar-brand">
+      <i class="fas fa-shopping-basket icon"></i>
+      <span class="navbar-text">Produkte</span>
+    </a>
+    <a href="#" class="navbar-brand">
+      <i class="fas fa-cog icon"></i>
+      <span class="navbar-text">Einstellungen</span>
+    </a>
+  </nav>
+</footer>
+
+
+
+
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
