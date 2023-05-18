@@ -1,5 +1,6 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
+const ejse = require('ejs-electron')
 
 function createWindow () {
   const win = new BrowserWindow({
@@ -11,7 +12,7 @@ function createWindow () {
     frame: false
   })
 
-  win.loadFile('index.html')
+  win.loadFile('client/index.ejs')
 }
 
 app.whenReady().then(() => {
